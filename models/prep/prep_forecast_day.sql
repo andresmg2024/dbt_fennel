@@ -9,7 +9,7 @@ add_features AS (
         ,DATE_PART('year', date) AS year -- year as a number
         ,TO_CHAR(date, 'Day') AS day_of_week -- weekday name as text
         ,DATE_PART('week', date) AS week_of_year -- calender week number as number
-        ,TO_CHAR(date, 'YYYY-IW') AS year_and_week -- year-calenderweek as text like '2024-43'
+        ,TO_CHAR(date, 'IYYY-IW') AS year_and_week -- year-calenderweek as text like '2024-43'
     FROM forecast_day_data
 )
 SELECT *
