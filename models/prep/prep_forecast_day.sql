@@ -14,8 +14,3 @@ add_features AS (
 )
 SELECT *
 FROM add_features
-
-    FROM forecast_day_data
-)
-SELECT *
-FROM add_features
